@@ -34,8 +34,8 @@ def backup(self, *args, **kwargs):
     filesWeMustHave = {f"backup-yearly-{year}.colpkg",
                        f"backup-monthly-{year}-{month}.colpkg",
                        f"backup-daily-{year}-{month}-{day}.colpkg"}
-    filesToKeep = ([f"backup-monthly-{yearToHave}-{monthToHave}" for yearToHave, monthToHave in monthsToKeep]+
-                   [f"backup-daily-{yearToHave}-{monthToHave}-{dayToHave}" for yearToHave, monthToHave, dayToHave in daysToKeep])
+    filesToKeep = ([f"backup-monthly-{yearToHave}-{monthToHave}.colpkg" for yearToHave, monthToHave in monthsToKeep]+
+                   [f"backup-daily-{yearToHave}-{monthToHave}-{dayToHave}.colpkg" for yearToHave, monthToHave, dayToHave in daysToKeep])
     dir = self.pm.backupFolder()
     for file in os.listdir(dir):
         if (file.startswith("backup-monthy-") or file.startswith("backup-daily-")) and file not in filesToKeep:
