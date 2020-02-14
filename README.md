@@ -4,7 +4,7 @@ Sometime, I want to find an old version of my collection. For example,
 to see how a card type used to be. Sadly, my oldest back-up is usually
 two monthes old. Of course, this can be solved with a [differential backup](https://en.wikipedia.org/wiki/Differential_backup) system; but that is not the point here.
 
-This add-on ensures that we keep at least one back-up by day for the last month, one back-up by month for the past year, and one back-up by year.
+This add-on ensures that we keep at least one back-up by day for the last month, one back-up by month for the past year, and one back-up by year. Those back-ups are saved in the same folder as regular backups.
 
 ## Warning
 ### Uninstalling the add-on
