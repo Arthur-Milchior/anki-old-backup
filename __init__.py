@@ -1,5 +1,6 @@
-import time
 import os
+import time
+
 from aqt.main import AnkiQt
 
 oldBackup = AnkiQt.backup
